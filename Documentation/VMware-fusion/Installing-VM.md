@@ -1,3 +1,5 @@
+# Installing VMware Fusion on MacBook
+
 ## Overview
 >VMware Fusion is a Type 2 hypervisor that enables multiple operating systems to run as virtual machines on a macOS host. In this home lab, VMware Fusion serves as the virtualization platform for building an enterprise-style Windows environment. It provides isolated virtual machines for client workstations, servers, networking experiments, Active Directory, and other infrastructure components without requiring dedicated physical hardware.
 
