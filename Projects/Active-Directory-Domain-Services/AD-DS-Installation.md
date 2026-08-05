@@ -1,54 +1,72 @@
-# Active Directory  (AD DS) Installation
+# Active Directory Domain Services (AD DS) Installation
 
 ## Business Scenario
 
-> Organizations rely on Active Directory Domain Services (AD DS) to centrally manage user identities, computers, security groups, authentication, and access to network resources. Before a Windows Server can function as a Domain Controller, the Active Directory Domain Services server role must first be installed. This project prepares the Windows Server infrastructure for centralized identity management within the enterprise lab.
+> Organizations require centralized identity and access management to efficiently manage users, computers, authentication, and security policies. Active Directory Domain Services (AD DS) provides the directory infrastructure that allows administrators to organize and manage enterprise resources from a central location. Before creating a domain, the Windows Server must first have the AD DS server role installed and prepared for Domain Controller configuration.
 
 ---
 
 ## Project Objective
 
-> Install the Active Directory Domain Services (AD DS) role on a Windows Server 2022 virtual machine hosted in Microsoft Azure. This establishes the foundation for promoting the server to a Domain Controller and implementing centralized authentication, authorization, and directory services.
+> Install the Active Directory Domain Services (AD DS) server role on the Windows Server 2022 Azure virtual machine. This prepares the server for the next phase of deployment: promoting the server to a Domain Controller and creating the Active Directory domain environment.
 
 ---
 
 ## Skills Demonstrated
 
-* Windows Server Administration
+* Windows Server Roles and Features Management
+* Active Directory Fundamentals
 * Active Directory Domain Services (AD DS)
-* Windows Server Roles and Features
 * Server Manager Administration
-* Identity Infrastructure Fundamentals
-* Enterprise Server Configuration
+* Windows Server Configuration
 * Microsoft Azure Virtual Machine Administration
-* Windows Server Validation
-* Basic Server Troubleshooting
+* Enterprise Identity Infrastructure Concepts
+* Server Preparation and Validation
 * Technical Documentation
 
 ---
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/ADDS-Installation-Wizard.png)
+> ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/ADDS-Role-Installation.png)
 
 > ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/ADDS-Installed.png)
 
 ---
 
-| Component           | Details                          |
-| ------------------- | -------------------------------- |
-| Cloud Provider      | Microsoft Azure                  |
-| Server              | Windows Server 2022 Datacenter   |
-| Server Name         | LABDC01                          |
-| Server Role         | Active Directory Domain Services |
-| Management Tool     | Server Manager                   |
-| Installation Method | Role-Based Installation          |
+| Component        | Details                          |
+| ---------------- | -------------------------------- |
+| Cloud Provider   | Microsoft Azure                  |
+| Server           | Windows Server 2022 Datacenter   |
+| Server Name      | LABDC01                          |
+| Operating System | Windows Server 2022 Datacenter   |
+| Role Installed   | Active Directory Domain Services |
+| Management Tool  | Server Manager                   |
 
 ---
 
 ## Project Architecture
 
-> *Architecture is documented as part of the Azure Networking Configuration project.*
+```text
+                         Microsoft Azure
+                               │
+                               │
+                     Resource Group: Windows Lab
+                               │
+                               │
+                 Windows Server 2022 VM (LABDC01)
+                               │
+                               │
+                 Active Directory Domain Services
+                    (Role Installed Only)
+                               │
+                               │
+              Future Domain Controller Configuration
+                               │
+                               ▼
+              Active Directory Forest and Domain
+                    (Next Project Phase)
+```
 
 ---
 
@@ -56,52 +74,54 @@
 
 ### Phase 1 – Server Preparation
 
-* Verified the Windows Server virtual machine was operational.
-* Confirmed administrator access to the server.
-* Validated network connectivity and system readiness.
+* Connected to the Windows Server 2022 virtual machine through Windows App.
+* Verified local administrator access.
+* Confirmed the server was online and ready for role installation.
+* Ensured the operating system environment was prepared for Active Directory configuration.
 
-### Phase 2 – Active Directory Role Installation
+### Phase 2 – Install Active Directory Domain Services Role
 
-* Opened Server Manager and launched the **Add Roles and Features Wizard**.
-* Selected a role-based installation for the local server.
-* Installed the **Active Directory Domain Services (AD DS)** server role.
-* Added all required supporting features.
+* Opened Server Manager.
+* Selected **Manage → Add Roles and Features**.
+* Chose **Role-based or feature-based installation**.
+* Selected the local Windows Server.
+* Installed the **Active Directory Domain Services** role.
+* Added required supporting features when prompted.
 
-### Phase 3 – Installation Verification
+### Phase 3 – Verify AD DS Installation
 
-* Confirmed the AD DS role installed successfully.
-* Verified the role appeared within Server Manager.
-* Confirmed the server was ready for Domain Controller promotion.
-* Documented the installation for future infrastructure deployment.
+* Confirmed the AD DS role appeared in Server Manager.
+* Verified the installation completed successfully.
+* Confirmed the server was prepared for Domain Controller promotion.
 
 ---
 
 ## Validation
 
-* Active Directory Domain Services installed successfully.
-* Required supporting features installed without errors.
-* Server Manager displayed the AD DS server role.
-* Installation completed without warnings or failures.
-* Server prepared for Domain Controller promotion.
+* Active Directory Domain Services role installed successfully.
+* Required AD DS features installed without errors.
+* Server Manager displayed Active Directory Domain Services.
+* Windows Server remained operational after installation.
+* Server was ready for the Domain Controller promotion process.
 
 ---
 
 ## Challenges Encountered
 
-* Understanding that installing the AD DS role does not automatically configure the server as a Domain Controller.
-* Differentiating between server role installation and Active Directory forest/domain creation.
-* Ensuring the server met all prerequisites before beginning installation.
+* Understanding the difference between installing the AD DS role and creating an Active Directory domain.
+* Learning that a Windows Server does not become a Domain Controller immediately after installing AD DS.
+* Ensuring the server environment was properly prepared before introducing directory services.
 
 ---
 
 ## Future Improvements
 
-* Promote the server to a Domain Controller.
-* Create a new Active Directory forest and domain.
-* Configure DNS integration.
-* Design an Organizational Unit (OU) structure.
+* Promote LABDC01 to a Domain Controller.
+* Create the Active Directory forest and domain.
+* Configure integrated DNS services.
+* Design Organizational Units (OUs).
 * Create users, groups, and service accounts.
-* Implement Group Policy Objects (GPOs).
+* Implement Group Policy management.
 
 ---
 
@@ -111,3 +131,4 @@
 * Azure Virtual Networking Configuration
 * Remote Administration with Windows App (RDP)
 * Domain Controller Promotion
+* DNS Configuration
