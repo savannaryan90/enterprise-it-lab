@@ -64,3 +64,9 @@ Installing Windows in a virtual environment allows enterprise administration tas
 - VMware Fusion Documentation
 - VMware Fusion Support Documentation for Apple Silicon Macs
 - Microsoft Windows System Requirements Documentation
+
+## Screenshots
+
+> ![Enterprise IT Portfolio](../../01-Images/Windows-11-Client/Install.png)
+
+---
