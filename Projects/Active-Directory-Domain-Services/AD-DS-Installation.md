@@ -1,4 +1,4 @@
-# Active Directory Domain Services (AD DS) Installation
+# Active Directory  (AD DS) Installation
 
 ## Business Scenario
 
