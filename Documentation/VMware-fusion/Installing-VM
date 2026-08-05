@@ -1,0 +1,96 @@
+## Overview
+>VMware Fusion is a Type 2 hypervisor that enables multiple operating systems to run as virtual machines on a macOS host. In this home lab, VMware Fusion serves as the virtualization platform for building an enterprise-style Windows environment. It provides isolated virtual machines for client workstations, servers, networking experiments, Active Directory, and other infrastructure components without requiring dedicated physical hardware.
+
+---
+
+## Objective
+>Install VMware Fusion on the macOS host and verify that the virtualization platform is functioning correctly. This provides the foundation for deploying Windows virtual machines that will be used throughout the home lab.
+
+---
+
+## Prerequisites
+- Apple Mac running macOS with Apple Silicon (M-series) or Intel processor
+- Administrative privileges on the macOS host
+- Stable internet connection for downloading VMware Fusion
+- Sufficient available disk space for virtual machines (recommended: 100 GB or more)
+- VMware Fusion installer
+- VMware account (if required for licensing or downloads)
+
+---
+
+## Environment
+Host: MacBook Air (M2, 8 GB RAM)
+Client: Windows 11 Pro ARM Virtual Machine
+Server: None (installed later)
+OS: macOS
+Tools:
+- VMware Fusion
+- Finder
+- Terminal (optional)
+- Web browser
+
+---
+
+## Concepts
+>Virtualization allows multiple operating systems to share the resources of a single physical computer while remaining logically isolated. VMware Fusion abstracts the host hardware into virtual hardware that guest operating systems interact with. Each virtual machine receives its own virtual CPU, memory, storage, networking, and peripherals, enabling enterprise environments to be simulated safely without additional physical devices.
+
+---
+
+## Procedure
+
+- Download the latest VMware Fusion installer from the VMware website.
+- Open the downloaded `.dmg` installer.
+- Drag the VMware Fusion application into the **Applications** folder.
+- Launch VMware Fusion from Applications.
+- Allow any required macOS security prompts.
+- Accept the license agreement.
+- Sign in with a VMware account if prompted.
+- Choose the appropriate licensing option.
+- Complete the initial setup wizard.
+- Verify VMware Fusion opens successfully.
+- Review the default preferences before creating virtual machines.
+- Configure the default virtual machine storage location if desired.
+
+---
+
+## Verification
+- VMware Fusion launches without errors.
+- The application displays the Home Library window.
+- New virtual machine creation wizard opens successfully.
+- Virtual networking components are available.
+- Preferences can be accessed without issue.
+
+---
+
+## Common Issues
+| Issue                        | Cause                                              | Resolution                                                         |
+| ---------------------------- | -------------------------------------------------- | ------------------------------------------------------------------ |
+| VMware Fusion will not open  | Application blocked by macOS security settings     | Allow VMware Fusion under **System Settings → Privacy & Security** |
+| Installation fails           | Corrupted installer                                | Download a fresh installer from VMware                             |
+| Virtual machine cannot start | Unsupported guest operating system or corrupted VM | Verify guest OS compatibility and recreate the VM if necessary     |
+| Insufficient storage         | Limited available disk space                       | Free storage or move VM files to an external SSD                   |
+
+---
+
+## Best Practices
+- Keep VMware Fusion updated to the latest stable release.
+- Store virtual machines on fast SSD storage whenever possible.
+- Allocate only the resources each VM requires to avoid host performance degradation.
+- Use snapshots before major configuration changes.
+- Organize virtual machines using clear, descriptive naming conventions.
+- Regularly back up important virtual machine files.
+
+---
+
+## Screenshots
+
+>  ![Enterprise IT Portfolio](../../../01-Images/VMware/Install.png)
+
+---
+
+## References
+- VMware Fusion Documentation
+- VMware Fusion Release Notes
+- Microsoft Windows 11 ARM Documentation
+
+---
