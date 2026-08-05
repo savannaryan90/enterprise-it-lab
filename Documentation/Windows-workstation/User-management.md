@@ -71,6 +71,16 @@ Create and manage local user accounts on a Windows client workstation. This incl
 - Users can sign in successfully.
 - Permissions match the assigned role.
 
+## Screenshots
+
+> ![Local Users Management](../../01-Images/Users/Local-Users.png)
+
+> ![Admin User Creation](../../01-Images/Users/Admin-User.png)
+
+> ![Remote Desktop Users Configuration](../../01-Images/Windows-11-Client/Remote-Desktop.png)
+
+---
+
 ---
 
 ## References
