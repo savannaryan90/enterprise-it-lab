@@ -31,7 +31,7 @@ Create and manage local user accounts on a Windows 11 Pro ARM client workstation
 
 > ![Local Users Management](../../01-Images/Users/Local-Users.png)
 
-> ![Admin User Creation](../../01-Images/Users/Admin-Acc-Clientstation.png)
+> ![Admin User Creation](../../01-Images/Users/Client-Computer-Management.png)
 
 > ![Remote Desktop Users Configuration](../../01-Images/Windows-11-Client/Remote-Desktop.png)
 
