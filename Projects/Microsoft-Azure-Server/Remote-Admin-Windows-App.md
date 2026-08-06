@@ -29,9 +29,7 @@
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/Azure/Windows-App-Connection.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/Azure/RDP-Session.png)
+> ![Enterprise IT Portfolio](../../01-Images/Azure/Windows-App-Azure&Windows.png)
 
 ---
 
