@@ -44,8 +44,7 @@ Questions asked:
 ---
 
 ## Screenshots
-![Enterprise IT Portfolio](../../01-Images/Users/Setting-New-Password-workstation.png)
-
+> ![Enterprise IT Portfolio](../../01-Images/Users/Setting-New-Password-workstation.png)
 ---
 
 ## Root Cause
