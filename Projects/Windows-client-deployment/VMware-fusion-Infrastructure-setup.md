@@ -43,7 +43,6 @@
 
 > ![Enterprise IT Portfolio](../../01-Images/VMware/Tools-Install.png)
 
-> _(Additional screenshots of virtual networking configuration can be added as the project evolves.)_
 
 ---
 
@@ -57,8 +56,7 @@
 
 ## Project Architecture
 
-> Insert architecture diagram showing:
-> 
+
 > - macOS Host
 >     
 > - VMware Fusion Hypervisor
@@ -67,8 +65,7 @@
 >     
 > - Virtual Network Adapter
 >     
-> - Internet Connectivity
->     
+> - Internet Connectivity  
 
 ---
 
