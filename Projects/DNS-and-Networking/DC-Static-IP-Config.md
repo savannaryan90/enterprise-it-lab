@@ -30,7 +30,7 @@
 
 > ![Enterprise IT Portfolio](../../01-Images/networking/Static-IP.png)
 
-> ![Enterprise IT Portfolio](../../01-Images/networking/Ip-reconfigured.png)
+> ![Enterprise IT Portfolio](../../01-Images/troubleshooting/Ip-reconfigured.png)
 
 ---
 
