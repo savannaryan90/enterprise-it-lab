@@ -29,9 +29,9 @@
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/Azure/Azure-VM-Creation.png)
+> ![Enterprise IT Portfolio](../../01-Images/Azure/Azure-VM-Installed.png)
 
-> ![Enterprise IT Portfolio](../../01-Images/Azure/Windows-Server-Desktop.png)
+> ![Enterprise IT Portfolio](../../01-Images/Azure/OG-server-manager-azure.png)
 
 ---
 
