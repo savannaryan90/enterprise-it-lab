@@ -24,14 +24,6 @@
 
 ---
 
-## Screenshots
-
-> ![Enterprise IT Portfolio](../../01-Images/DNS/Reverse-Lookup-Zone.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/DNS/Reverse-DNS-Test.png)
-
----
-
 | Component      | Details                        |
 | -------------- | ------------------------------ |
 | Cloud Provider | Microsoft Azure                |
