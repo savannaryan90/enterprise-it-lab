@@ -28,11 +28,7 @@
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/DNS/DNS-Manager-Zones.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/DNS/DNS-Verification.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/DNS/DCDIAG-DNS-Test.png)
+> ![Enterprise IT Portfolio](../../01-Images/Troubleshooting/DNS-troubleshooting.png)
 
 ---
 
