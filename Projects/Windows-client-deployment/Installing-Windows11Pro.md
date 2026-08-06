@@ -29,6 +29,7 @@ The workstation will be used to practice real-world IT support tasks including d
 ## Screenshots
 
 > ![Enterprise IT Portfolio](../../01-Images/Windows-11-Client/Install.png)
+> > ![Enterprise IT Portfolio](../../01-Images/Windows-11-Client/Window-Tools-Install.png)
 
 ---
 
