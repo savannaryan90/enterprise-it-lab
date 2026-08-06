@@ -29,11 +29,11 @@
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/Domain-Controller-Promotion.png)
+> ![Enterprise IT Portfolio](../../01-Images/Active-Directory/creating-domain-name.png)
 
-> ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/Active-Directory-Domain.png)
+> ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/storage-services-installed.png)
 
-> ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/AD-Users-Computers.png)
+> ![Enterprise IT Portfolio](../../01-Images/ActiveDirectory/DNS-service-installed.png)
 
 ---
 
