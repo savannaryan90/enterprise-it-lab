@@ -29,11 +29,7 @@
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/Remote-Desktop/Windows-App-Connection.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/Remote-Desktop/RDP-Error-0x204.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/Remote-Desktop/Successful-RDP-Connection.png)
+> ![Enterprise IT Portfolio](../../01-Images/Windows-11-Client/Remote-Desktop.png)
 
 ---
 
