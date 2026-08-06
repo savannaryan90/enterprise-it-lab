@@ -28,11 +28,9 @@
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/Networking/Static-IP-Configuration.png)
+> ![Enterprise IT Portfolio](../../01-Images/networking/Static-IP.png)
 
-> ![Enterprise IT Portfolio](../../01-Images/Networking/IPConfig-Verification.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/Networking/DNS-Configuration.png)
+> ![Enterprise IT Portfolio](../../01-Images/Networking/Ip-reconfigured.png)
 
 ---
 
