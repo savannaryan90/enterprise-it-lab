@@ -30,9 +30,8 @@
 
 > ![Enterprise IT Portfolio](../../01-Images/Active-Directory/AD-DS-Installed.png)
 
-> ![Enterprise IT Portfolio](../../01-Images/Active-Directory/storage-services-installed.png)
+> ![Enterprise IT Portfolio](../../01-Images/Active-Directory/Installing-AD-DS-azure.png)
 
-> ![Enterprise IT Portfolio](../../01-Images/Active-Directory/DNS-service-installed.png)
 ---
 
 | Component        | Details                          |
