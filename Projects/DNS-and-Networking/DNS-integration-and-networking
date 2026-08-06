@@ -1,0 +1,276 @@
+# Active Directory DNS Integration Verification
+
+## Business Scenario
+
+> Active Directory environments rely heavily on DNS for authentication, domain controller discovery, and service communication. Domain Controllers use DNS records to locate services such as LDAP, Kerberos, and other Active Directory components. Incorrect DNS configuration can result in domain join failures, authentication problems, slow logins, and Group Policy issues. Validating DNS functionality is an essential step after deploying Active Directory infrastructure.
+
+---
+
+## Project Objective
+
+> Verify and document the DNS components required to support Active Directory Domain Services. The goal is to confirm that LABDC01 is providing DNS functionality, that Active Directory-integrated DNS zones exist, and that DNS services are prepared to support domain authentication and service discovery.
+
+---
+
+## Skills Demonstrated
+
+* Active Directory DNS Integration
+* DNS Server Validation
+* Active Directory Domain Controller Administration
+* DNS Manager Administration
+* PowerShell DNS Commands
+* Domain Name Resolution Troubleshooting
+* Active Directory Service Dependency Awareness
+* Enterprise Infrastructure Validation
+* Windows Server Administration
+
+---
+
+## Screenshots
+
+> ![Enterprise IT Portfolio](../../01-Images/DNS/DNS-Manager-Zones.png)
+
+> ![Enterprise IT Portfolio](../../01-Images/DNS/DNS-Verification.png)
+
+> ![Enterprise IT Portfolio](../../01-Images/DNS/DCDIAG-DNS-Test.png)
+
+---
+
+| Component      | Details                                      |
+| -------------- | -------------------------------------------- |
+| Cloud Provider | Microsoft Azure                              |
+| Server         | Windows Server 2022 Datacenter               |
+| Server Name    | LABDC01                                      |
+| Role           | Domain Controller                            |
+| Services       | Active Directory Domain Services, DNS Server |
+| Domain         | homelab.local                                |
+| Tools          | DNS Manager, PowerShell, Server Manager      |
+
+---
+
+## Project Architecture
+
+```text
+                         Microsoft Azure
+                               │
+                               │
+                  Windows Server 2022 VM
+                           LABDC01
+                               │
+                               │
+              Active Directory Domain Services
+                               │
+                               │
+                         DNS Server Role
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+       Forward Lookup       _msdcs Zone    Service Records
+            Zone                             
+              │                               
+              │
+              ▼
+      Domain Name Resolution
+              │
+              ▼
+    Users / Computers / Services
+```
+
+---
+
+## Implementation Summary
+
+### Phase 1 – Understand Active Directory DNS Requirements
+
+* Reviewed the relationship between Active Directory and DNS.
+
+* Identified that Domain Controllers rely on DNS for:
+
+  * Domain authentication
+  * Service discovery
+  * LDAP location
+  * Kerberos communication
+  * Domain join operations
+
+* Reviewed enterprise DNS practices:
+
+  * Domain Controllers should use reliable DNS configurations.
+  * Domain controllers require consistent network addressing.
+  * Domain clients should use internal DNS servers instead of public DNS providers.
+
+---
+
+### Phase 2 – Verify DNS Service Availability
+
+* Confirmed the DNS Server role was installed during Domain Controller promotion.
+
+Verified DNS service status:
+
+```powershell
+Get-Service DNS
+```
+
+Confirmed the DNS service was running.
+
+---
+
+### Phase 3 – Validate Active Directory DNS Zones
+
+Verified DNS zones using:
+
+```powershell
+Get-DnsServerZone
+```
+
+Confirmed the presence of Active Directory-related DNS zones:
+
+* Domain forward lookup zone
+* `_msdcs` zone
+
+Reviewed DNS Manager:
+
+```
+DNS Manager
+└── Forward Lookup Zones
+    ├── homelab.local
+    └── _msdcs
+```
+
+---
+
+### Phase 4 – Validate DNS Health
+
+Performed DNS validation using:
+
+```powershell
+dcdiag /test:dns
+```
+
+Verified:
+
+* DNS functionality
+* Domain controller DNS registration
+* Active Directory DNS dependencies
+
+Tested DNS resolution:
+
+```powershell
+Resolve-DnsName <domain-name>
+```
+
+---
+
+## Validation
+
+* DNS Server service was available.
+* Active Directory DNS zones were present.
+* `_msdcs` DNS records existed.
+* Domain Controller DNS testing was performed.
+* DNS resolution was tested.
+* LABDC01 DNS configuration was reviewed.
+* Environment was prepared for future domain client communication.
+
+---
+
+## Challenges Encountered
+
+### DNS Configuration Dependency
+
+During Domain Controller validation, DNS-related warnings appeared because Active Directory depends on proper DNS communication.
+
+Observed issue:
+
+```text
+DNS Client Event 1014
+```
+
+Potential impacts:
+
+* Domain authentication failures
+* Domain join issues
+* LDAP lookup failures
+* Group Policy communication problems
+
+The issue was documented separately in the DNS troubleshooting section.
+
+---
+
+## Useful Commands
+
+Check DNS service:
+
+```powershell
+Get-Service DNS
+```
+
+View DNS zones:
+
+```powershell
+Get-DnsServerZone
+```
+
+Test DNS health:
+
+```powershell
+dcdiag /test:dns
+```
+
+View DNS configuration:
+
+```powershell
+ipconfig /all
+```
+
+Test DNS resolution:
+
+```powershell
+Resolve-DnsName <name>
+```
+
+Clear DNS cache:
+
+```powershell
+ipconfig /flushdns
+```
+
+Register DNS records:
+
+```powershell
+ipconfig /registerdns
+```
+
+---
+
+## Best Practices
+
+* Domain Controllers should use internal DNS servers for Active Directory communication.
+* Avoid configuring domain systems to rely on public DNS providers.
+* Validate DNS after Domain Controller deployment.
+* Monitor DNS health using tools such as `dcdiag`.
+* Document DNS zones and records.
+* Confirm DNS functionality before troubleshooting higher-level Active Directory issues.
+
+---
+
+## Future Improvements
+
+* Configure and document static IP addressing for infrastructure servers.
+* Validate DNS configuration after static IP implementation.
+* Configure DNS forwarders if required.
+* Add additional Domain Controllers for DNS redundancy.
+* Monitor DNS health over time.
+* Create client DNS validation procedures after domain joining workstations.
+
+---
+
+## Related Documentation
+
+* Azure Virtual Networking Configuration
+* Domain Controller Promotion
+* Domain Controller Role Verification
+* Static IP Configuration
+* IPConfig Network Validation
+* DNS Troubleshooting Scenario
+* Windows 11 Domain Join
+* Active Directory Client Configuration
