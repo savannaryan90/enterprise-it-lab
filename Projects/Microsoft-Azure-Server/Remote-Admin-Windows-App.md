@@ -29,7 +29,7 @@
 
 ## Screenshots
 
-> ![Enterprise IT Portfolio](../../01-Images/Azure/Windows-app-Azure&Windows.png)
+> ![Enterprise IT Portfolio](../../01-Images/Azure/Windows-app-Azure-&Windows.png)
 
 ---
 
