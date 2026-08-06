@@ -27,16 +27,6 @@
 
 ---
 
-## Screenshots
-
-> ![Enterprise IT Portfolio](../../01-Images/Azure/Virtual-Network.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/Azure/Network-Security-Group.png)
-
-> ![Enterprise IT Portfolio](../../01-Images/Azure/Public-IP.png)
-
----
-
 | Component         | Details                        |
 | ----------------- | ------------------------------ |
 | Cloud Provider    | Microsoft Azure                |
